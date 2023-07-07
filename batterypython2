@@ -1,0 +1,6 @@
+#!/usr/bin/env zsh
+
+python /Users/Michael/Documents/Programmering/Python-projekt/batterypython.py &
+echo -n -e "\033]0;My Window Name\007" &
+osascript -e 'tell application "Terminal" to close (every window whose name contains "My Window Name")' &
+exit 0
